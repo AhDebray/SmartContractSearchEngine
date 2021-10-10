@@ -1,0 +1,23 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content%}
+
+<h1 align="center">Search For Contract Code</h1>
+<form method="POST">
+  <div class="form-group">
+      <textarea name="code" id="code" class="form-control"></textarea>
+      <br />
+      <div align="center">
+        <button type="submit" class="btn btn-primary">Add Contract Code</button>
+      </div>
+  </div>
+</form>
+<h2 align="center">Most similar contract addresses:</h2>
+<table class="center" style="margin: 0px auto;">
+  {% for row in adata %}
+  <tr>
+    {% for cell in row %}
+    <td>{{ cell }}</td>
+    {% endfor %}
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}
