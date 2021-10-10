@@ -1,0 +1,6 @@
+This is guide to setting up the Prototype project: - 
+
+1) Requirements of the prototype that need to be installed (pip install) - flask | Flask-SQLAlchemy | flask-login | sklearn | numpy | nltk | pandas | string | re | time | json
+2) Once these libraries are installed, the prototype files need to be downloaded to a directory. 
+3) To launch the project run - main.py
+4) navigate to http://127.0.0.1:5000 to access webapp
